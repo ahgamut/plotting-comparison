@@ -23,11 +23,7 @@ p = (
     .add(so.Dots(pointsize=5))
     .add(so.Line(), so.PolyFit(), color=None)
     .add(so.Text(fontsize=10), color=None)
-    .label(
-        x="",
-        y="",
-        title="cyl = {}".format,
-    )
+    .label(x="", y="", title="cyl = {}".format)
 )
 p.plot()
 

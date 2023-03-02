@@ -9,8 +9,9 @@ best_in_class = mpg.loc[mpg.groupby("class")["hwy"].idxmax()]
 for cname, subdf in mpg.groupby("class"):
     plt.scatter(subdf["displ"], subdf["hwy"], label=cname)
 
-plt.title("mpg via altair: displ vs hwy")
+plt.title("mpg via plotext: displ vs hwy")
 plt.show()
+
 # any helper functions
 
 # loading the data

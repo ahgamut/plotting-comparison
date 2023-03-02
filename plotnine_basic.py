@@ -27,7 +27,8 @@ plot = (
     + geom_point(size=3)
     + facet_wrap("~ cyl", labeller=labeller(cols=lambda x: f"cyl = {x}"))
     + geom_label(
-        aes(label="model"), size=10, alpha=0.5, color="black", data=best_in_class
+        aes(label="model"), size=10, alpha=0.5,
+        color="black", data=best_in_class
     )
     + geom_smooth(se=False, color="blue")
     + theme(legend_position="bottom", figure_size=(9, 9))
